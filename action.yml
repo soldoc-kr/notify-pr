@@ -1,0 +1,15 @@
+name: 'Notify PR'
+description: 'Notify PR review requests by sending a slack channel'
+branding:
+  icon: "bell"
+  color: "white"
+inputs:
+  slackChannel:
+    description: "slack channel to send the message"
+    required: true
+  slackBotToken:
+    description: "slack bot token for messaging"
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'
