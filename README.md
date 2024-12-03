@@ -2,7 +2,7 @@
 
 🌏 한국어 | [**English**](README.en.md)
 
-PR 리뷰 요청을 받으면 Slack으로 알리는 Github Actions
+PR 데이터를 Slack으로 알리는 Github Actions
 
 <img src="https://github.com/user-attachments/assets/e68ffed1-678e-4d16-92dd-555c2ffe3e3b" width="500" alt="intro">
 
@@ -21,7 +21,7 @@ name: notify pr review
 
 on:
   pull_request:
-    types: [review_requested]
+    types: [opened]
     
 jobs:
   notify:

@@ -2,7 +2,7 @@
 
 🌏 [**한국어**](README.md) | English
 
-GitHub Actions to notify on Slack when a PR review is requested.
+GitHub Actions to notify on Slack when a PR is created.
 
 <img src="https://github.com/user-attachments/assets/e68ffed1-678e-4d16-92dd-555c2ffe3e3b" width="500" alt="intro">
 
@@ -21,7 +21,7 @@ name: notify pr review
 
 on:
   pull_request:
-    types: [review_requested]
+    types: [opened]
     
 jobs:
   notify:
