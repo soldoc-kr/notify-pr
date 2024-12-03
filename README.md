@@ -28,7 +28,7 @@ jobs:
     runs-on: [ubuntu-latest]
     steps:
       - name: Notify PR Review
-        uses: soldoc-kr/notify-prt@v1.0.0
+        uses: soldoc-kr/notify-pr@v1.0.0
         with:
           slackChannel: ${{ secrets.SLACK_CHANNEL }}
           slackBotToken: ${{ secrets.SLACK_BOT_TOKEN }}
